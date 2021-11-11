@@ -1,0 +1,133 @@
+body{
+    background: linear-gradient(#FFEEE5, #C1B8D9);
+    margin: 0;
+    font-family: sans-serif;
+    background-attachment: fixed;
+}
+
+/*CATEGORIES*/
+
+.photosGrid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.container {
+	background: #000;
+	width: 33%;
+	width: calc(33.3% - 2px);
+	height: 30vw;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 3px;
+    position: relative;
+}
+
+.container img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.container:hover img {
+    opacity: 0.7;
+}
+  
+.container:hover .middle {
+    opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 736px) {
+	main {
+		padding: 20px;
+	}
+
+	.container {
+		width: calc(33.3% - 16px);
+		margin-bottom: 26px;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	main {
+		max-width: 935px;
+		margin: auto;
+	}
+
+	.container {
+		height: 293px;
+	}
+}
+
+.category-name{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.column-main {
+    float: left;
+    width: 75%;
+    padding: 10px;
+}
+
+.column-categories {
+    position: fixed;
+    background-color: white;
+    width: 20%;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    left:75%;
+    top:14.5%;
+}
+
+.column-categories a{
+    color:black;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.category{
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.category label{
+    margin-left: 10px;
+	cursor: auto;
+}

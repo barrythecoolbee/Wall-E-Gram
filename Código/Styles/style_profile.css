@@ -1,0 +1,157 @@
+
+body{
+    background: linear-gradient(#FFEEE5, #C1B8D9);
+    /*background-color: #FAFAFA;*/
+    margin: 0;
+    font-family: sans-serif;
+    background-attachment: fixed;
+	overflow: auto;
+}
+
+/*PROFILE*/
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.bio{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    height: 13em;
+    padding: 3em 5em 0 4em;
+    border: 0.2px solid #DBDBDB; 
+    background-color: white;
+    margin-top: 20px;
+    width: 52%;
+}
+
+.profile-photo{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+}
+
+.profile-photo>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info{
+    margin-left: 0;
+}
+
+.profile-info .name{
+    font-size: 1.7em;
+    font-weight: bold;
+    display: inline;
+    /*color: #545454;*/
+}
+
+.follow-btn{
+    background-color: #C997CA;
+    color: #fff;
+    font-size: 1em;
+    width: 4em;
+    height: 1.8em;
+    border: unset;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    top: -5px;
+    left: 8px;
+}
+
+.profile-info label.edit{
+    cursor: pointer;
+}
+
+.profile-info>label>i{
+
+    transform: scale(1.2);
+    position: relative;
+    top: -5px;
+    left: 4px;
+}
+
+.profile-info>label>label{
+    font-size: small;
+    margin-left: 20px;
+}
+
+.add-photo{
+    position: fixed;
+    bottom: 5em;
+    right: 5em;
+    width: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.photosGrid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.photosGrid__Photo {
+	background: #000;
+	width: 33%;
+	width: calc(33.3% - 2px);
+	height: 30vw;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 3px;
+}
+
+.photosGrid__Photo>img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photosGrid__Photo>img:hover {
+	opacity: 0.7;
+}
+
+
+@media screen and (min-width: 736px) {
+	main {
+		padding: 20px;
+	}
+
+	.photosGrid__Photo {
+		width: calc(33.3% - 16px);
+		margin-bottom: 26px;
+	}
+}
+
+@media screen and (min-width: 980px) {
+	main {
+		max-width: 935px;
+		margin: auto;
+	}
+
+	.photosGrid__Photo {
+		height: 293px;
+	}
+}
+
+.sympathizer-btn{
+    background-color: #C997CA;
+    color: #fff;
+    font-size: 1em;
+    width: 10em;
+    height: 2.8em;
+    border: unset;
+    cursor: pointer;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 5em;
+    right: 5em;
+}

@@ -1,0 +1,305 @@
+/*HEADER*/
+
+.header{
+    background-color: #FFF;
+    border-bottom: 1px solid #dbdbdb;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header .navbar{
+    width: 975px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand{
+    width: 200px;
+    height: 35px;
+}
+
+.navbar .wrap-input{
+    position: relative;
+    width: 215px;
+    height: 28px;
+    background-color: #fbfbfb;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+.navbar .wrap-input input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .wrap-input input::placeholder{
+    color: #8e8e8e;
+    font-size: 14px;
+    text-align: center;
+}
+
+.navbar .wrap-input input:focus{
+    outline: none;
+    padding-left: 27px;
+}
+
+.navbar .wrap-input input:focus::placeholder{
+    position: absolute;
+    top:50%;
+    transform: translate(0, -50%);
+}
+
+.navbar .wrap-input input[type="text"]{
+    color: #3a3a3a;
+}
+
+.navbar .wrap-input input:focus + i.icon-search{
+    position: absolute;
+    top:50%;
+    left: 6px;
+    transform: translate(0, -50%) scale(0.65);
+    color: gray;
+    opacity: 0.7;
+}
+
+
+.profile{
+    position: relative;
+}
+
+.profile>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.navbar .wrap-input i.icon-search{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -50%) scale(0.65);
+    color: gray;
+    opacity: 0.7;
+}
+
+.header .navbar .nav-item{
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar .nav-item:hover{
+    cursor: pointer;
+}
+
+.nav-item img{
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+
+.menu-profile{
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.0975);
+    width: 191px;
+    border-radius: 6px;
+    position: absolute;
+    right: -76%;
+    top: 37px;
+    display: none;
+    z-index: 98;
+}
+
+.showMenuProfile{
+    display: block;
+}
+
+.menu-profile .item-menu{
+    display: flex;
+    align-items: center;
+    padding: 7px 11px;
+}
+
+.menu-profile .item-menu:hover{
+    background-color: #efefef;
+    transition: 0.5s;
+}
+
+#triangle-up{
+    position: absolute;
+    z-index: 9999;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 13px solid #fff;
+    top: -12px;
+    right: 34%;
+}
+
+.menu-profile hr{
+    background-color: rgba(var(--b38,219,219,219),1);
+    border: 0;
+    height: 1px;
+    margin: 0;
+    width: 100%;
+}
+
+
+.wrap-item-like{
+    position: relative;
+}
+
+.wrap-like{
+    position: relative;
+}
+
+.menu-like{
+    background-color: #fff;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.0975);
+    width: 512px;
+    border-radius: 6px;
+    position: absolute;
+    right: -53%;
+    top: 37px;
+    height: 278px;
+    overflow-y: scroll;
+    display: none;
+    cursor: auto;
+    z-index: 99;
+}
+
+.showMenuLike{
+    display: block;
+}
+
+.menu-like .item-menu{
+    display: flex;
+    align-items: center;
+    padding: 7px 11px;
+    justify-content: space-between;
+}
+
+.menu-like .item-menu:first-child{
+    display: flex;
+    align-items: center;
+    padding: 14px 11px 7px 11px;
+    justify-content: space-between;
+}
+
+.menu-like .item-menu .profile{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.menu-like .item-menu .profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-like .item-menu .profile img:hover{
+    cursor: pointer;
+}
+
+.menu-like .item-menu .profile2{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.menu-like .item-menu .profile2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-like .item-menu .profile2 img:hover{
+    cursor: pointer;
+}
+
+.menu-like .item-menu .notification{
+    width: 370px;
+}
+
+#triangle-up-like{
+    position: absolute;
+    z-index: 9999;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 13px solid #fff;
+    top: 24px;
+    right: 58%;
+}
+
+.menu-like .item-menu img{
+    margin-right: 10px;
+    width: 16px;
+}
+
+.menu-like .item-menu span{
+    font-size: 14px;
+    color: black;
+}
+
+.menu-like hr{
+    margin: 5px 8px 5px 57px;
+    border: 1px solid #f7f7f7;
+}
+
+@media (max-width:1024px){
+    .navbar{
+        max-width: 90%;
+    }
+}
+
+@media (max-width:627px){
+    .wrap-input{
+        display: none;
+    }
+
+    .menu-like{
+        width: 700%;
+    }
+}
+
+@media (max-width:490px){
+    .nav-item img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-item .profile{
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar .brand{
+        width: 120px;
+        height: 25px;
+    }
+
+    #triangle-up-like{
+        top:24px;
+    }
+
+    #triangle-up{
+        right: 8%;
+    }
+}

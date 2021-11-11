@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    background-image: url(../images/walle_wallpaper.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+    font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.container{
+    text-align: center;
+    margin-left: 60%;
+	margin-top: 6%;
+}
+
+.text{
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.page{
+    width: 350px;
+    background-color:rgba(255, 255, 255, 0.75);
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+
+form{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form input{
+    margin-bottom: 5px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 3px;
+    outline: none;
+}
+
+form input:focus{
+    border: 1px solid rgba(0,0,0,0.7);
+}
+
+input[type="text"], input[type="password"], input[type="email"]{
+    padding-left: 10px;
+    position: relative;
+    height: 35px;
+    font-size: 17px;
+}
+
+input::placeholder{
+    font-weight: normal;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+input:focus::placeholder{
+    position: absolute;
+    font-size: 10px;
+    transform: translateY(-134px);
+}
+
+.logo {
+  width: 12rem;
+  margin: 1rem;
+}
+
+
+form #btn_{
+    background: #C997CA;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	padding: 0.5rem 0 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+form #btn_:active{
+    background: #a6a6a6;
+    transform: scale(0.995);
+}
+
+form .option{
+    color: #5a5a5a;
+    font-weight: bold;
+    position: relative;
+	font-family: salsa;
+}
+
+form .option:before{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: #b6b6b6;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+form .option:after{
+    position: absolute;
+    content: '';
+    width: 37%;
+    height: 2px;
+    background: #b6b6b6;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+
+/********** 
+ * SIGN UP *
+ **********/
+
+/* Sign up container */
+.sign-up {
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* Don't have an account? */
+.sign-up span {
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+/* Sign up link */
+.sign-up a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #C997CA;
+}
+
+/********** 
+ *  GUEST  *
+ **********/
+
+/* Guest container */
+.guest {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* Guest phrase */
+.guest span {
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+/* Guest link */
+.guest a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #C997CA;
+}
+
+/********** 
+ * FOOTER *
+ **********/
+
+footer {
+  position:absolute;
+   bottom:25px;
+   left: 15px;
+}
+
+.copyright {
+  text-align: center;
+  color: #bfbfbf;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.digitCode {
+	font-size: 15px;
+}

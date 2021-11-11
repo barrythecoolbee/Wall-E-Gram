@@ -1,0 +1,197 @@
+body{
+    background: linear-gradient(#FFEEE5, #C1B8D9);
+    /*background-color: #FAFAFA;*/
+    margin: 0;
+    padding-bottom: 10px;
+	background-attachment: fixed;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*MAIN*/
+
+.instacard{
+    width: 800px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: white;
+}
+
+.instacard-header{
+    display: flex;
+    height: 60px;
+    margin: 0;
+    align-items: center;
+}
+
+.instacard-profile-image{
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    border-radius: 50%;
+    float: left;
+}
+
+.instacard-profile-name{
+    float: left;
+    font-weight: 650;
+    color: #262626;
+    margin-left: 1rem;
+	font-size: 17px;
+}
+
+.instacard-profile-name:hover {
+    color: #cecece;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.instacard-image{
+    width: 100%;
+}
+
+.instacard-like-icon, .instacard-comment-icon{
+    padding: 8px;
+    margin-left: 5px;
+	color: black;
+	text-decoration: none;
+    cursor: pointer;
+}
+
+.instacard-likes{
+    float: right;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0 16px;
+    margin-top: 9px;
+}
+
+.instacard-description{
+    margin-left: 15px;
+    margin-bottom: 4px;
+    line-height: 18px;
+    padding: 0;
+}
+
+.instacard-description > .instacard-description-profile{
+    font-weight: 600;
+}
+
+.comments>p {
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.instacard-comments{
+    padding: 0 16px;
+    display: none;
+}
+
+.instacard-comment{
+    margin-left: 10px;
+    margin-bottom: 4px;
+    line-height: 18px;
+    padding: 0;
+}
+
+.instacard-comment > .instacard-comment-profile{
+    font-weight: 600;
+}
+
+.footer{
+	padding-bottom: 5px;
+}
+
+.input-comment {
+	resize: none;
+    margin-top: 8px;
+	margin-left: 10px;
+    width: 70%;
+    height: 20px;
+    background-color: #EEEEEE;
+    border: 1px solid #DBDBDB;
+}
+
+.input-comment-btn {
+	background-color: #C997CA;
+    color: #fff;
+    font-size: 1em;
+    width: 4em;
+    height: 1.8em;
+    border: unset;
+    cursor: pointer;
+    border-radius: 3px;
+	position: relative;
+    top: -9px;
+    left: 8px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    margin-left: 50px;
+    margin-right: 8px;
+  }
+
+  .switch-text {
+    position: absolute;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #C997CA;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #C997CA;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
